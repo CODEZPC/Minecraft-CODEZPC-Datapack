@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:story/mine_diamond",
+  "criteria": {
+    "diamond_boots": {
+      "trigger": "minecraft:impossible"
+    },
+    "diamond_chestplate": {
+      "trigger": "minecraft:impossible"
+    },
+    "diamond_helmet": {
+      "trigger": "minecraft:impossible"
+    },
+    "diamond_leggings": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.story.shiny_gear.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:diamond_chestplate"
+    },
+    "title": {
+      "translate": "advancements.story.shiny_gear.title"
+    }
+  },
+  "requirements": [
+    [
+      "diamond_helmet",
+      "diamond_chestplate",
+      "diamond_leggings",
+      "diamond_boots"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
