@@ -1,0 +1,31 @@
+{
+    "parent": "code:main/0004-wooden_pickaxe",
+    "display": {
+        "icon": {
+            "count": 1,
+            "id": "minecraft:cobblestone"
+        },
+        "title": "有点硬",
+        "description": "获得原石",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "frame": "task"
+    },
+    "criteria": {
+        "l": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:cobblestone"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "l"
+        ]
+    ]
+}

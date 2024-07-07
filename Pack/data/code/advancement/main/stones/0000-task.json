@@ -1,0 +1,31 @@
+{
+    "parent": "code:main/0005-cobblestone",
+    "display": {
+        "icon": {
+            "count": 1,
+            "id": "minecraft:book"
+        },
+        "title": "§6任务解锁！\n§9支线 采石工",
+        "description": "或许有什么捷径？",
+        "announce_to_chat": false,
+        "show_toast": true,
+        "frame": "task"
+    },
+    "criteria": {
+        "l": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:cobblestone"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "l"
+        ]
+    ]
+}

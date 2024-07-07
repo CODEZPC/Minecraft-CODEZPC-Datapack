@@ -1,0 +1,1 @@
+{Slot:6b,count:1,id:"minecraft:raw_gold"},{Slot:7b,count:1,id:"minecraft:gold_ingot"},{Slot:9b,count:1,id:"minecraft:emerald"},{Slot:11b,count:1,id:"minecraft:diamond"}]}

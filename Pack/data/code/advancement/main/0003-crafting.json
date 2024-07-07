@@ -1,0 +1,31 @@
+{
+    "parent": "code:main/0002-plank",
+    "display": {
+        "icon": {
+            "count": 1,
+            "id": "minecraft:crafting_table"
+        },
+        "title": "这是？工作台！",
+        "description": "获得工作台",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "frame": "goal"
+    },
+    "criteria": {
+        "l": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:crafting_table"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "l"
+        ]
+    ]
+}

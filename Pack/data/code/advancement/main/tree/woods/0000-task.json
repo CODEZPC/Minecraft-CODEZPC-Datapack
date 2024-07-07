@@ -1,0 +1,31 @@
+{
+    "parent": "code:main/0001-wood",
+    "display": {
+        "icon": {
+            "count": 1,
+            "id": "minecraft:book"
+        },
+        "title": "§6任务解锁！\n§9支线 伐木工",
+        "description": "别破坏环境",
+        "announce_to_chat": false,
+        "show_toast": true,
+        "frame": "task"
+    },
+    "criteria": {
+        "l": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "#minecraft:logs"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "l"
+        ]
+    ]
+}

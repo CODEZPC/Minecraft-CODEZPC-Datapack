@@ -1,0 +1,59 @@
+{
+    "parent": "code:main/tree/0001-sapling",
+    "display": {
+        "icon": {
+            "count": 1,
+            "id": "minecraft:oak_sapling"
+        },
+        "title": "绿色可持续化发展",
+        "description": "种下树苗",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "frame": "goal"
+    },
+    "criteria": {
+        "l": {
+            "trigger": "minecraft:impossible",
+            "conditions": {
+                "loaction": [
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "position": {
+                                "x": {
+                                    "min": -30000000,
+                                    "max": 30000000
+                                },
+                                "y": {
+                                    "min": -64,
+                                    "max": 319
+                                },
+                                "z": {
+                                    "min": -30000000,
+                                    "max": 30000000
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:block_state_property",
+                        "block": "#minecraft:saplings"
+                    },
+                    {
+                        "condition": "minecraft:match_tool",
+                        "predicate": {
+                            "items": [
+                                "#minecraft:saplings"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "l"
+        ]
+    ]
+}

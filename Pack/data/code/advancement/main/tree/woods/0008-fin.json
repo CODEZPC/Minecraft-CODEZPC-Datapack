@@ -1,0 +1,39 @@
+{
+    "parent": "code:main/tree/woods/0007-lv7",
+    "display": {
+        "icon": {
+            "count": 1,
+            "id": "minecraft:book"
+        },
+        "title": "§6任务完成！\n§9支线 伐木工",
+        "description": "别破坏环境",
+        "announce_to_chat": false,
+        "show_toast": true,
+        "frame": "challenge"
+    },
+    "criteria": {
+        "l": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "#minecraft:logs",
+                        "count": {
+                            "min": 64
+                        }
+                    }
+                ],
+                "slots": {
+                    "full": {
+                        "min": 36
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "l"
+        ]
+    ]
+}

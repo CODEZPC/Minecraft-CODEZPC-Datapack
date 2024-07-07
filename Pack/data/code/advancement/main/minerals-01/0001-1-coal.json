@@ -1,0 +1,31 @@
+{
+    "parent": "code:main/0007-stone_pickaxe",
+    "display": {
+        "icon": {
+            "count": 1,
+            "id": "minecraft:coal"
+        },
+        "title": "燃料！",
+        "description": "获得煤炭",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "frame": "goal"
+    },
+    "criteria": {
+        "l": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:coal"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "l"
+        ]
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "parent": "code:main/0007-stone_pickaxe",
+    "display": {
+        "icon": {
+            "count": 1,
+            "id": "minecraft:charcoal"
+        },
+        "title": "可再生资源",
+        "description": "获得木炭",
+        "announce_to_chat": true,
+        "show_toast": true,
+        "frame": "task"
+    },
+    "criteria": {
+        "l": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "minecraft:charcoal"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "l"
+        ]
+    ]
+}

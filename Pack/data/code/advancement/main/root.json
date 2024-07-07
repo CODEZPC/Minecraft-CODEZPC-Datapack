@@ -1,0 +1,31 @@
+{
+    "display": {
+        "background": "minecraft:textures/entity/end_portal.png",
+        "icon": {
+            "count": 1,
+            "id": "minecraft:bedrock"
+        },
+        "title": "旅途，探索与故事",
+        "description": "开始了？",
+        "announce_to_chat": false,
+        "show_toast": true,
+        "frame": "task"
+    },
+    "criteria": {
+        "l": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "dimension": "minecraft:overworld"
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "l"
+        ]
+    ]
+}
